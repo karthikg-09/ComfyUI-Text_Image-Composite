@@ -416,7 +416,6 @@ class Text_Image_Multiline_Zho:
     RETURN_NAMES = ("image",)
     FUNCTION = "text_to_image_multiline"
     CATEGORY = "Zho模块组/text"
-    font_dir = os.path.join(os.path.dirname(__file__), "..", "font")
     
 
     def text_to_image_multiline(
