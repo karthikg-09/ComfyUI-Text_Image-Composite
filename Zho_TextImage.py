@@ -326,8 +326,8 @@ class Text_Image_Multiline_Zho:
     fonts = {}
 
     def __init__(self):
-        self.CACHE_FONTS()
         # - This is executed when the graph is executed, we could conditionaly reload fonts there
+        self.CACHE_FONTS()
         pass
 
     @classmethod
@@ -416,14 +416,12 @@ class Text_Image_Multiline_Zho:
     RETURN_NAMES = ("image",)
     FUNCTION = "text_to_image_multiline"
     CATEGORY = "Zho模块组/text"
-    
 
     def text_to_image_multiline(
         self, text, selected_font, align, wrap, graphspace, linespace, font_size, width, height, color, outline_size, outline_color, margin_x, margin_y, swap=False
     ):
         from PIL import Image, ImageDraw, ImageFont
         import textwrap
-
 
         # 如果用户选择交换宽度和高度，则调用交换函数
         if swap:
